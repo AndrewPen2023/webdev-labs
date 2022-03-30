@@ -6,10 +6,30 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/*
-Add some style blocks below this line to style the cards.
-Feel free to borrow from Exercise 1.
-*/
+.no-pad-no-margin {
+    padding: 0px;
+    margin: 0px;
+}
+
+.shibuya-font {
+    font-family: 'Palette Mosaic';
+}
+
+.box {
+    box-sizing: border-box;
+    border: solid 1px #CCC; 
+    width: max(35vh, 200px);
+    height: max(50vh,500px);   
+    padding: 0px 20px;
+    margin: 5px;
+    display: inline-block;
+}
+
+img {
+    max-width: calc(100% + 40px);
+    margin-left: -20px;
+    margin-right: 20px;
+}
 
 
 /* Tablet Media Query */

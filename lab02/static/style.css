@@ -31,6 +31,8 @@ main {
     width: 350px;
     border: solid 1px lightgrey;
     margin: 10px;
+    display: inline-block;
+    vertical-align: top;
 }
 
 .card img {

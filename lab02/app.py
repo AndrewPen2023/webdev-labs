@@ -85,9 +85,12 @@ def exercise4():
         user=current_user,
         search_term=search_term,
         location=location,
-        restaurant=restaurants[0]
+        restaurant=restaurants[0],
     )
 
+############################
+# Optional FLASK Excercise #
+############################
 @app.route('/cards/')
 @app.route('/cards')
 def photos_static():
@@ -98,7 +101,13 @@ def photos_static():
         return '"location" and "term" are required query parameters'
     
     
-    return render_template('cards.html')
-
-
-    
+    url = 'https://www.apitutor.org/yelp/simple/v3/businesses/search?location={0}&term={1}'.format(location, search_term)
+    response = requests.get(url)
+    restaurants = response.json()
+    return render_template(
+        'cards.html',
+        user=current_user,
+        search_term=search_term,
+        location=location,
+        restaurants=restaurants
+    )

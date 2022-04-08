@@ -1,0 +1,17 @@
+<div class="card">
+    <h2>{{ restaurant.get('name') }}</h2>
+    <img src={{ restaurant.get('image_url') }}>
+    <p>{{ restaurant.get('display_address') }}</p>
+    <div class="sledge">
+        <p>Price:</p>
+        <b>{{restaurant.get('price')}}</b>
+    </div>
+    <div class="sledge">
+        <p>Rating:</p>
+        <b>{{restaurant.get('rating')}}</b>
+    </div>
+    <div class="sledge">
+        <p># Reviews:</p>
+        <b>{{restaurant.get('review_count')}}</b>
+    </div>
+</div>

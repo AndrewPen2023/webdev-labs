@@ -59,11 +59,13 @@ INSERT INTO bookmarks (user_id, post_id, timestamp)
 VALUES (26, 219, now()), 
 (26, 220, now()), 
 (26, 221, now());
+
 -- Exercise 12
 DELETE FROM bookmarks 
 WHERE user_id = 26 and post_id = 219 
 OR user_id = 26 and post_id = 220 
 OR user_id = 26 and post_id = 221;
+
 -- Exercise 13
 UPDATE users 
 SET email = 'knick2022@gmail.com' 

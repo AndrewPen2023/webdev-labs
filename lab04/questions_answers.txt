@@ -1,0 +1,8 @@
+1. What is the value of SQLAlchemy?
+SQLAlchemy's value comes from its ability to abstract database access various relational databases with SQL. It makes it easier for the developer to write simpler and non-redundant code.
+
+2. What is a model?
+A model is a representation of a database schema relationship as a class in Python such that standard manipulation of an instance of the class in python appropriately manipulates a row in that database's corresponding table.
+
+3. What is a view?
+A view is a representation of possible user interactions with a database table as a class in Python, and individual instances of the class represent individual user access and their 'view' of that table.
